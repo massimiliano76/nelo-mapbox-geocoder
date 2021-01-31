@@ -1,0 +1,6 @@
+logs
+node_modules
+dev
+.idea
+build
+.npm
