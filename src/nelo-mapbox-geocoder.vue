@@ -4,7 +4,6 @@
     import MapboxGeocoder from '@mapbox/mapbox-gl-geocoder';
     import '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css'
 
-
     export default {
         props: {
             accessToken: String,
@@ -14,21 +13,18 @@
             placeholder: String,
             callback: Function,
         },
-        //props: ['accessToken', 'language', 'types', 'countries'],
         name: 'NeloMapboxGeocoder', // vue component name
         data() {
             return {};
         },
         mounted() {
-            // We need to set mapbox-gl library here in order to use it in template
-            //console.log(this.$inertia.page.props.mapboxSettings.access_token);
+
             mapboxgl.accessToken = this.accessToken;
             var geocoder = new MapboxGeocoder({
                 accessToken: mapboxgl.accessToken,
                 types: this.types,
                 countries: this.countries,
                 language: this.language,
-                /*defaultInput: 'Roma',*/
                 placeholder: this.placeholder
             });
 
