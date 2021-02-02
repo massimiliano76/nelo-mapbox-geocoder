@@ -7,7 +7,7 @@ nelo-mapbox-geocoder is a VueJS component for [mapbox-gl-geocoder](https://githu
 Use the package manager [npm](https://www.npmjs.com/) to install nelo-mapbox-geocoder.
 
 ```bash
-npm i vue-mapbox-geocoder
+npm i nelo-mapbox-geocoder
 ```
 
 ## Usage
